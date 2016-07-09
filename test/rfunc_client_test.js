@@ -15,11 +15,11 @@ describe('RfClient', function () {
   const BASE_URL = '/testing-api/rfunc'
   this.timeout(3000)
   let port
-  let rfunc
+  let server
   let baseUrl
   before(() => co(function * () {
     port = yield aport()
-    rfunc = rfunc({
+    server = rfunc({
       foo: {
         bar (text) {
           return co(function * () {
@@ -42,12 +42,12 @@ describe('RfClient', function () {
     }, {
       pathname: BASE_URL
     })
-    rfunc.listen(port)
+    server.listen(port)
     baseUrl = `http://localhost:${port}${BASE_URL}`
   }))
 
   after(() => co(function * () {
-    rfunc.close()
+    server.close()
   }))
 
   it('Send client', () => co(function * () {
