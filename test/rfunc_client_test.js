@@ -38,9 +38,8 @@ describe('RfClient', function () {
             bye: { desc: 'Say bye' }
           }
         }
-      }
-    }, {
-      pathname: BASE_URL
+      },
+      $pathname: BASE_URL
     })
     server.listen(port)
     baseUrl = `http://localhost:${port}${BASE_URL}`

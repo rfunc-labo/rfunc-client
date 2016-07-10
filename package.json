@@ -1,11 +1,12 @@
 {
   "name": "rfunc-client",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Client of rfunc server",
   "main": "lib",
+  "browser": "sims/browser",
   "scripts": {
     "test": "./ci/test.js",
-    "prepublish": "./ci/build.js"
+    "prepublish": "./ci/build.js && ./ci/browser.js"
   },
   "repository": "rfunc-labo/rfunc-client",
   "keywords": [
@@ -31,6 +32,7 @@
     "uuid": "^2.0.2"
   },
   "devDependencies": {
+    "ape-compiling": "^4.3.3",
     "ape-covering": "^3.0.3",
     "ape-formatting": "^1.0.0",
     "ape-releasing": "^4.0.1",
@@ -42,8 +44,9 @@
     "aport": "^1.0.0",
     "asleep": "^1.0.3",
     "coz": "^6.0.3",
+    "filedel": "^2.0.1",
     "injectmock": "^2.0.0",
-    "rfunc": "^1.0.4"
+    "rfunc": "^1.1.1"
   },
   "engines": {
     "node": ">=6",
