@@ -5,7 +5,7 @@
  */
 'use strict'
 
-const rclient = require('rfunc/clinet')
+const rclient = require('rfunc-clinet')
 const co = require('co')
 
 co(function * () {
@@ -14,5 +14,4 @@ co(function * () {
   // Call remote api and receive the result
   let { success } = yield sign.signin('foo', 'bar1234')
   console.log('success:', success)
-
 }).catch((err) => console.error(err))
