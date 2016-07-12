@@ -57,8 +57,28 @@ describe('RfClient', function () {
     }
     {
       let foo = yield new RFClient(baseUrl).connect('foo')
+      assert.ok(foo.inspect())
       let hoge = yield foo.bar('hoge')
-      console.log(hoge)
+      assert.ok(hoge)
+    }
+    {
+      let caught
+      try {
+        yield new RFClient(baseUrl).connect('__invalid_module__')
+      } catch (e) {
+        caught = e
+      }
+      assert.ok(caught)
+    }
+    {
+      let caught
+      let foo = yield new RFClient(baseUrl).connect('foo')
+      try {
+        yield foo.__not_exists()
+      } catch (e) {
+        caught = e
+      }
+      assert.ok(caught)
     }
   }))
 })
