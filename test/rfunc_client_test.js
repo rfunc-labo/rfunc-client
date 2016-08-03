@@ -39,6 +39,9 @@ describe('RfClient', function () {
           }
         }
       },
+      baz () {
+        return 'This is baz!'
+      },
       $pathname: BASE_URL
     })
     server.listen(port)
@@ -79,6 +82,10 @@ describe('RfClient', function () {
         caught = e
       }
       assert.ok(caught)
+    }
+    {
+      let baz = yield new RFClient(baseUrl).connect('baz')
+      assert.equal((yield baz()), 'This is baz!')
     }
   }))
 })
