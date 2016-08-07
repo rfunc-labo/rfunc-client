@@ -1,10 +1,12 @@
 /**
  * {{pkg.description}}
  * @module {{pkg.name}}
+ * @version {{pkg.version}}
  */
 
 'use strict'
 
+const load = require('./load')
 const create = require('./create')
 const RFuncClient = require('./rfunc_client')
 
@@ -12,6 +14,7 @@ let lib = create.bind(this)
 
 Object.assign(lib, RFuncClient, {
   create,
+  load,
   RFuncClient
 })
 
