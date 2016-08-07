@@ -20,18 +20,22 @@ describe('load', function () {
   }))
 
   it('Load', () => co(function * () {
-    let module = load({
+    let module = yield load({
       hey () {
         const s = this
         return s._hey
       },
+      $init () {
+        const s = this
+        s._hey = 0
+      },
       $before () {
         const s = this
-        s._hey = (s._hey || 0) + 1
+        s._hey = s._hey + 1
       },
       $after () {
         const s = this
-        s._hey = (s._hey || 0) * 2
+        s._hey = s._hey * 2
       }
     })
     assert.equal(yield module.hey(), 1)
