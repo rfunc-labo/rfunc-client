@@ -1,6 +1,6 @@
 {
   "name": "rfunc-client",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Client of rfunc server",
   "main": "lib",
   "browser": "shim/browser",
@@ -35,7 +35,7 @@
   "devDependencies": {
     "ababel": "^1.0.25",
     "ababel-es2015": "^1.0.5",
-    "amocha": "^1.0.12",
+    "amocha": "^1.0.13",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-reporting": "^3.0.2",
@@ -47,7 +47,7 @@
     "asleep": "^1.0.3",
     "coz": "^6.0.17",
     "injectmock": "^2.0.0",
-    "rfunc": "^1.2.39"
+    "rfunc": "^2.0.0"
   },
   "engines": {
     "node": ">=6",
