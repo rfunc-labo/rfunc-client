@@ -28,14 +28,14 @@
     "defaults": "^1.0.3",
     "rfunc-constants": "^1.0.3",
     "stringcase": "^3.0.1",
-    "superagent": "^2.1.0",
+    "superagent": "^2.2.0",
     "superagent-promise-plugin": "^3.2.0",
     "uuid": "^2.0.2"
   },
   "devDependencies": {
-    "ababel": "^1.0.25",
-    "ababel-es2015": "^1.0.5",
-    "amocha": "^1.0.13",
+    "ababel": "^1.1.1",
+    "ababel-es2015": "^1.0.6",
+    "amocha": "^1.0.14",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-reporting": "^3.0.2",
@@ -47,7 +47,7 @@
     "asleep": "^1.0.3",
     "coz": "^6.0.17",
     "injectmock": "^2.0.0",
-    "rfunc": "^2.0.0"
+    "rfunc": "^2.0.1"
   },
   "engines": {
     "node": ">=6",
