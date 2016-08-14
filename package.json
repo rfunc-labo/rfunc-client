@@ -25,7 +25,6 @@
   "dependencies": {
     "co": "^4.6.0",
     "debug": "^2.2.0",
-    "defaults": "^1.0.3",
     "rfunc-constants": "^1.0.3",
     "stringcase": "^3.0.1",
     "superagent": "^2.2.0",
