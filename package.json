@@ -32,7 +32,7 @@
     "uuid": "^2.0.2"
   },
   "devDependencies": {
-    "ababel": "^1.1.1",
+    "ababel": "^1.1.2",
     "ababel-es2015": "^1.0.6",
     "amocha": "^1.0.14",
     "ape-formatting": "^1.0.2",
