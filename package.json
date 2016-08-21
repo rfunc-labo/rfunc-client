@@ -47,7 +47,7 @@
     "asleep": "^1.0.3",
     "coz": "^6.0.17",
     "injectmock": "^2.0.0",
-    "rfunc": "^2.0.5"
+    "rfunc": "^2.1.0"
   },
   "engines": {
     "node": ">=6",
