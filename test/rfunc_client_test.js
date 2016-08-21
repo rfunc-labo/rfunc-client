@@ -31,6 +31,9 @@ describe('RfClient', function () {
             }
           })
         },
+        hoge () {
+          throw Object.assign(new Error('hoge!'), { status: 400 })
+        },
         $spec: {
           name: 'foo-api',
           methods: {
@@ -63,6 +66,13 @@ describe('RfClient', function () {
       assert.ok(foo.inspect())
       let hoge = yield foo.bar('hoge')
       assert.ok(hoge)
+
+      try {
+        yield foo.hoge()
+      } catch (e) {
+        assert.equal(e.status, 400)
+        assert.equal(e.message, 'hoge!')
+      }
     }
     {
       let caught
