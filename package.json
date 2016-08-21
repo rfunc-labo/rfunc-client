@@ -1,6 +1,6 @@
 {
   "name": "rfunc-client",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "Client of rfunc server",
   "main": "lib",
   "browser": "shim/browser",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/rfunc-labo/rfunc-client#readme",
   "dependencies": {
+    "asenv": "^1.0.6",
     "co": "^4.6.0",
     "debug": "^2.2.0",
     "rfunc-constants": "^1.0.3",
@@ -46,7 +47,7 @@
     "asleep": "^1.0.3",
     "coz": "^6.0.17",
     "injectmock": "^2.0.0",
-    "rfunc": "^2.0.1"
+    "rfunc": "^2.0.5"
   },
   "engines": {
     "node": ">=6",
