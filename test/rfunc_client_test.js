@@ -55,8 +55,8 @@ describe('RfClient', function () {
   it('Send client', async () => {
     // Get description
     {
-      let desc = await new RFClient(baseUrl).describe('foo')
-      console.log('desc', desc)
+      const desc = await new RFClient(baseUrl).describe('foo')
+      // console.log('desc', desc)
       assert.ok(desc.name, 'foo-api')
     }
     {
