@@ -1,6 +1,6 @@
 {
   "name": "rfunc-client",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Client of rfunc server",
   "main": "lib",
   "browser": "shim/browser",
