@@ -21,7 +21,7 @@ describe('RfClient', function () {
     server = rfunc({
       foo: {
         async bar (text) {
-          let d = new Date()
+          const d = new Date()
           await asleep(100)
           return {
             time: new Date() - d,
@@ -56,12 +56,13 @@ describe('RfClient', function () {
     // Get description
     {
       let desc = await new RFClient(baseUrl).describe('foo')
+      console.log('desc', desc)
       assert.ok(desc.name, 'foo-api')
     }
     {
-      let foo = await new RFClient(baseUrl).connect('foo')
+      const foo = await new RFClient(baseUrl).connect('foo')
       assert.ok(foo.inspect())
-      let hoge = await foo.bar('hoge')
+      const hoge = await foo.bar('hoge')
       assert.ok(hoge)
 
       try {
