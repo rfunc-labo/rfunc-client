@@ -6,14 +6,13 @@
 'use strict'
 
 const rclient = require('rfunc/clinet')
-const co = require('co')
 
-co(function * () {
-  let sign = yield rclient().connect('sign')
+void async function () {
+  let sign = await rclient().connect('sign')
 
   // Fetch the spec data
-  let $spec = yield sign.describe()
+  let $spec = await sign.describe()
   /* ... */
-}).catch((err) => console.error(err))
+}().catch((err) => console.error(err))
 
 

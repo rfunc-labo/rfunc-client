@@ -1,6 +1,6 @@
 {
   "name": "rfunc-client",
-  "version": "2.0.14",
+  "version": "3.0.1",
   "description": "Client of rfunc server",
   "main": "lib",
   "browser": "shim/browser",
@@ -23,33 +23,32 @@
   },
   "homepage": "https://github.com/rfunc-labo/rfunc-client#readme",
   "dependencies": {
-    "asenv": "^1.0.6",
+    "asenv": "^2.0.2",
     "co": "^4.6.0",
-    "debug": "^2.6.1",
+    "debug": "^3.1.0",
     "rfunc-constants": "^1.0.3",
-    "stringcase": "^3.2.1",
+    "stringcase": "^4.1.1",
     "superagent": "^3.4.1",
     "superagent-promise-plugin": "^3.2.0",
     "uuid": "^3.0.1"
   },
   "devDependencies": {
-    "ababel": "^2.0.1",
-    "ababel-es2015": "^2.0.1",
-    "amocha": "^2.0.0",
+    "ababel": "^4.0.7",
+    "amocha": "^5.0.0",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.8",
     "ape-testing": "^4.0.1",
-    "ape-tmpl": "^5.0.15",
+    "ape-tmpl": "^6.0.10",
     "ape-updating": "^4.1.0",
-    "aport": "^1.0.0",
+    "aport": "^2.0.0",
     "asleep": "^1.0.3",
-    "coz": "^6.0.17",
+    "coz": "^7.0.1",
     "injectmock": "^2.0.0",
-    "rfunc": "^2.1.3"
+    "rfunc": "^3.0.0"
   },
   "engines": {
-    "node": ">=6",
-    "npm": ">=3"
+    "node": ">=8",
+    "npm": ">=5"
   }
 }

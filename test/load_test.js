@@ -6,42 +6,38 @@
 
 const load = require('../lib/load.js')
 const assert = require('assert')
-const co = require('co')
+
 
 describe('load', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(async () => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(async () => {
 
-  }))
+  })
 
-  it('Load', () => co(function * () {
-    let module = yield load({
+  it('Load', async () => {
+    let module = await load({
       hey () {
-        const s = this
-        return s._hey
+        return this._hey
       },
       $init () {
-        const s = this
-        s._hey = 0
+        this._hey = 0
       },
       $before () {
-        const s = this
-        s._hey = s._hey + 1
+        this._hey = this._hey + 1
       },
       $after () {
-        const s = this
-        s._hey = s._hey * 2
+        this._hey = this._hey * 2
       }
     })
-    assert.equal(yield module.hey(), 1)
-    assert.equal(yield module.hey(), 3)
-    assert.equal(yield module.hey(), 7)
-  }))
+    assert.equal(await module.hey(), 1)
+    assert.equal(await module.hey(), 3)
+    assert.equal(await module.hey(), 7)
+  })
 })
 
 /* global describe, before, after, it */
