@@ -12,7 +12,7 @@ const assert = require('assert')
 
 describe('RfClient', function () {
   const BASE_URL = '/testing-api/rfunc'
-  this.timeout(3000)
+  this.timeout(30000)
   let port
   let server
   let baseUrl
