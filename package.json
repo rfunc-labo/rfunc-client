@@ -1,6 +1,6 @@
 {
   "name": "rfunc-client",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "description": "Client of rfunc server",
   "main": "lib",
   "browser": "shim/browser",
@@ -26,13 +26,13 @@
     "asenv": "^3.0.1",
     "bwindow": "^2.0.2",
     "cross-fetch": "^2.2.2",
-    "debug": "^3.1.0",
+    "debug": "^4.1.0",
     "rfunc-constants": "^1.0.5",
     "stringcase": "^4.2.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.0.0",
+    "@babel/runtime": "*",
     "ababel": "^5.0.6",
     "amocha": "^5.0.0",
     "ape-formatting": "^1.0.2",
