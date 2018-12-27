@@ -25,18 +25,18 @@
   "dependencies": {
     "asenv": "^3.0.1",
     "bwindow": "^2.0.2",
-    "cross-fetch": "^2.2.2",
-    "debug": "^4.1.0",
+    "cross-fetch": "^3.0.0",
+    "debug": "^4.1.1",
     "rfunc-constants": "^1.0.5",
-    "stringcase": "^4.2.0",
+    "stringcase": "^4.3.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@babel/runtime": "*",
-    "ababel": "^5.0.6",
+    "ababel": "^5.0.8",
     "amocha": "^5.0.0",
     "ape-formatting": "^1.0.2",
-    "ape-releasing": "^4.0.4",
+    "ape-releasing": "^5.0.0",
     "ape-tasking": "^4.0.8",
     "ape-testing": "^4.0.1",
     "ape-tmpl": "^6.0.11",
